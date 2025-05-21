@@ -68,3 +68,21 @@ It depends on:
 ---
 
 > Need help choosing the best host for your project? Ask away! 🚀
+
+
+# 🌐 How to Host a Website
+
+Hosting a website means putting your website files (HTML, CSS, JS, etc.) on a server so people can access it via the internet (like www.yoursite.com).
+
+---
+
+## 🚀 Hosting Methods
+
+### 1. ✅ **GitHub Pages** (Best for static sites)
+
+**Steps:**
+1. Create a GitHub account and a new repository.
+2. Push your website code to the repo.
+3. Go to **Settings > Pages**.
+4. Under "Source", select `main` branch and `/root`.
+5. Click **Save** — your site will be live at:
