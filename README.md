@@ -151,3 +151,58 @@ Always test your site locally before deploying. Make sure your project is optimi
 - Want to host a specific kind of app (like a portfolio, blog, or full-stack project)?
 - Let me know and I’ll give you the exact steps.
 
+# ☁️ Amazon EC2 (Elastic Compute Cloud)
+
+Amazon EC2 is a web service provided by **Amazon Web Services (AWS)** that allows you to run virtual servers (called "instances") in the cloud. It gives you scalable computing capacity without needing to invest in physical hardware.
+
+---
+
+## 🚀 What is EC2?
+
+EC2 allows developers to launch and manage virtual machines (VMs) on demand. These virtual servers can be used for:
+- Hosting websites and web apps
+- Running backend APIs and services
+- Performing computations and batch processing
+- Hosting databases and machine learning models
+
+---
+
+## ⚙️ Key Features
+
+| Feature             | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| **Scalable**        | Launch or terminate instances based on demand.                             |
+| **Flexible**        | Choose from many OS types (Linux, Windows) and instance types (CPU, GPU).  |
+| **Secure**          | Use firewalls (security groups), key pairs, and IAM roles.                 |
+| **Customizable**    | Choose instance size, storage, networking, and regions.                    |
+| **Pay-as-you-go**   | Only pay for what you use.                                                  |
+
+---
+
+## 📦 EC2 Components
+
+- **Instance**: A virtual server.
+- **AMI (Amazon Machine Image)**: A template used to launch an instance.
+- **Instance Type**: Hardware configuration (e.g., `t2.micro`, `m5.large`).
+- **EBS (Elastic Block Store)**: Persistent storage for your instances.
+- **Security Group**: A virtual firewall for controlling inbound/outbound traffic.
+- **Key Pair**: Used to SSH securely into your EC2 instance.
+
+---
+
+## 🛠️ How to Launch an EC2 Instance (Basic Steps)
+
+1. **Login** to [AWS Console](https://console.aws.amazon.com/)
+2. Go to **EC2 > Launch Instance**
+3. Choose:
+   - Name
+   - AMI (e.g., Ubuntu, Amazon Linux)
+   - Instance type (e.g., `t2.micro` - Free Tier)
+   - Key pair (create/download for SSH access)
+   - Security group (open ports like 22 for SSH, 80 for HTTP)
+4. Click **Launch**
+5. Connect using:
+   ```bash
+   ssh -i "your-key.pem" ec2-user@your-ec2-ip-address
+
+
